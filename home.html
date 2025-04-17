@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SENSE Beauty</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="home.html">SENSE</a></div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="skincare.html">Skin Care</a>
+      <a href="bodycare.html">Body Care</a>
+      <a href="offers.html">Offers</a>
+      <a href="about.html">About Us</a>
+    </nav>
+    <div class="auth-buttons">
+      <a href="#" onclick="toggleModal('signIn')">Sign In</a>
+      <a href="#" class="filled" onclick="toggleModal('signUp')">Sign Up</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Glowing skin, naturally</h1>
+      <p>Indulge in plant-based skin care for naturally radiant results.</p>
+      <button>Shop now</button>
+    </div>
+    <div class="hero-img">
+      <img src="assets/promo_image.jpg" alt="Skin Care" />
+    </div>
+  </section>
+
+  <div class="auth-modal" id="authModal">
+    <div class="auth-modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h2 id="modalTitle">Sign In</h2>
+      <form>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit" class="submit-btn">Continue</button>
+      </form>
+      <p id="toggleText">Don't have an account? <a onclick="switchForm()">Sign Up</a></p>
+    </div>
+  </div>
+  <section class="product-section">
+    <h2>Shop our most trusted formulas</h2>
+    <div class="product-grid">
+      
+      <!-- Product Card 1 -->
+      <div class="product-card">
+        <span class="badge">Sale</span>
+        <img src="assets/mock_image_1.jpg" alt="Moisturizer">
+        <h3>Moisturizer</h3>
+        <p class="price"><span class="old-price">£19.00 GBP</span> £16.00 GBP</p>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="product-card">
+        <img src="assets/mock_image_2.jpg" alt="Cleanser">
+        <h3>Cleanser</h3>
+        <p class="price">£28.00 GBP</p>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="product-card">
+        <img src="assets/mock_image_3.jpg" alt="Serum">
+        <h3>Serum</h3>
+        <p class="price">£16.00 GBP</p>
+      </div>
+
+      <!-- Product Card 4 -->
+      <div class="product-card">
+        <span class="badge">Sale</span>
+        <img src="assets/mock_image_4.jpg" alt="Moisturizer">
+        <h3>Moisturizer</h3>
+        <p class="price"><span class="old-price">£20.00 GBP</span> £16.00 GBP</p>
+      </div>
+
+    </div>
+  </section>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Help & Information</h3>
+        <ul>
+          <li><a href="#">Shipping Info</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>About Us</h3>
+        <ul>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Connect With Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="payment-icons">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-paypal"></i>
+          <i class="fab fa-cc-amex"></i>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 SENSE. All rights reserved.</p>
+    </div>
+  </footer>
+  <div class="cookie-banner" id="cookieBanner">
+    <p>We use cookies to ensure you get the best experience on our website. <a href="#">Learn more</a></p>
+    <button onclick="acceptCookies()">Accept</button>
+  </div>
+    
+</body>
+</html>
